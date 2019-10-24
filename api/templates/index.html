@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="{% static 'logo.png'%}">
+    </a>
+    <h1>Weighted Sum Algorithm</h1>
+    <p>A weighted sum algorithm used to populate the NPTs of Bayesian networks.</p>
+  </div>
+</div>
+<div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> How it works?</h3>
+      <ul>
+        <li>A service to populate the NPTs of Bayesian networks.</li>
+        <li>To generate a NPT use the endpoint: api/v1.0/npt/</li>
+        <li>Use this as an example: <a href="https://codebeautify.org/jsonviewer/cb478c03" target="_blank">Generating a CPT for a child node with 5 states and 3 parents.</a> </li>
+      </ul>
+    </div>
+    
+  </div> <!-- row -->
+   <div class="alert alert-info text-center" role="alert">
+    If you have any questions feel free to contact me: joaobatista@copin.ufcg.edu.br
+  </div>
+</div>
+{% endblock %}
